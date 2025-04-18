@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lever Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Simple live reload
+        document.addEventListener('DOMContentLoaded', () => {
+            const ws = new WebSocket(`ws://${location.host}`);
+            ws.onmessage = () => window.location.reload();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="gradient-bg"></div>
+        <header>
+            <h1>
+                <div class="logo">
+                    <span class="logo-text">LEVER<span class="logo-bracket">[</span></span>
+                    <span class="logo-labs">LABS<span class="logo-bracket">]</span></span>
+                    <div class="logo-line"></div>
+                </div>
+            </h1>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h2 class="static-text">WE BUILD</h2>
+                <div class="revolving-text">
+                    <span class="word">COMPANIES</span>
+                    <span class="word">PROJECTS</span>
+                    <span class="word">BUSINESSES</span>
+                    <span class="word">PLATFORMS</span>
+                    <span class="word">PRODUCTS</span>
+                    <span class="word">ECOSYSTEMS</span>
+                </div>
+            </div>
+            <p class="tagline">Growth and Scale through <span class="accent">Leverage</span></p>
+        </section>
+
+        <section class="pillars">
+            <div class="pillar">
+                <div class="pillar-icon">
+                    <img src="assets/code.svg" alt="Code">
+                </div>
+                <h3>Code</h3>
+                <p>Automating processes and building scalable solutions</p>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon">
+                    <img src="assets/content.svg" alt="Content">
+                </div>
+                <h3>Content</h3>
+                <p>Creating valuable insights and knowledge sharing</p>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon">
+                    <img src="assets/capital.svg" alt="Capital">
+                </div>
+                <h3>Capital</h3>
+                <p>Strategic investment and resource allocation</p>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon">
+                    <img src="assets/community.svg" alt="Community">
+                </div>
+                <h3>Community</h3>
+                <p>Building networks and fostering collaboration</p>
+            </div>
+        </section>
+
+        <div class="contact">
+            <a href="mailto:contact@lever-labs.com">contact@lever-labs.com</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
